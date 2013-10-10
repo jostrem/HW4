@@ -22,13 +22,11 @@ Partial Class _Default
         pretax = tbPreTax.Text
         posttax = tbPostTax.Text
 
-        'convert to dbl
-        hoursworked = CDbl(tbHoursWorked.Text)
-        wage = CDbl(tbWage.Text)
-        pretax = CDbl(tbPreTax.Text)
-        posttax = CDbl(tbPostTax.Text)
-
+        'convert wage to currency
         tbWage.Text = FormatCurrency(wage)
+        tbPreTax.Text = FormatCurrency(pretax)
+        tbPostTax.Text = FormatCurrency(posttax)
+
 
 
         'generating gross pay
@@ -52,6 +50,20 @@ Partial Class _Default
 
         'formatting lbl
         lblSalaryPay.Text = FormatCurrency(netincome)
+
+    End Sub
+
+    Protected Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+
+
+        'reset button clears everything
+        tbWage.Text = ""
+        tbHoursWorked.Text = ""
+        tbPreTax.Text = ""
+        tbPostTax.Text = ""
+
+        lblSalaryPay.Text = ""
+
 
     End Sub
 End Class
