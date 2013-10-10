@@ -15,7 +15,7 @@
     <div>
     
         <p>
-            Salary Calculator</p>
+           Salary Calculator</p>         
         <p>
             &nbsp;</p>
         <p>

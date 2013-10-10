@@ -1,4 +1,8 @@
 body {
-font-family: arial;
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 font-size: 20px/28px;
+background: yellow; 
 }
+.h1 {
+	font-style: bold;
+	}
