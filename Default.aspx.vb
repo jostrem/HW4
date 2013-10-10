@@ -38,8 +38,9 @@ Partial Class _Default
 
         'if statement for grossPay
         If grosspay < 500 Then
-            taxablePay = taxablePay * 0.18
-        Else : tax = taxablePay * 0.22
+            tax = taxablePay * 0.18
+        Else
+            tax = taxablePay * 0.22
         End If
 
         'calc pay
